@@ -1,0 +1,17 @@
+body{
+    background-color: grey;
+}
+main{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.grupoimg {
+    border-radius: 70px;
+    width: 40%;
+}
