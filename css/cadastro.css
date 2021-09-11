@@ -1,0 +1,25 @@
+body{
+    background-color: grey;
+}
+main{
+    width: 60%;
+    margin: 10px auto;
+    text-align: center;
+   
+}
+
+.btn {
+    border: 1px solid #ced4da;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+}
+.fas{
+    font-size: 1.5rem;
+}
+
+
+#cep{
+    display: flex;
+    gap: 5px;
+}
+
