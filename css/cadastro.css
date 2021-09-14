@@ -1,25 +1,32 @@
 body{
-    background-color: grey;
+    
 }
 main{
     width: 60%;
     margin: 10px auto;
     text-align: center;
-   
+    background-color: rgb(202, 200, 200);
+    padding: 20px;
+    border-radius: 15px;
 }
 
 .btn {
     border: 1px solid #ced4da;
-    padding: 0;
+    padding: 2px 5px;
     background-color: rgb(255, 255, 255);
+    height: 37px;
 }
 .fas{
     font-size: 1.5rem;
 }
-
+.check{
+    display: none;
+}
 
 #cep{
     display: flex;
     gap: 5px;
 }
-
+.buscacep{
+    font-size: 10px;
+}
