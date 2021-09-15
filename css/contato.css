@@ -22,13 +22,12 @@ body{
 .menu{
 	display:flex;
 	align-items: center;
-	justify-content: space-between;
-	max-width: 960px;
+	justify-content: space-around;
+	/* max-width: 960px; */
 	margin: 0 auto;
 	flex-wrap: wrap;	
 }
 
-/*.menu_logo{*/
 .gif{
 	margin: 10px;
   border-radius: 5px;
@@ -72,8 +71,10 @@ img {
 /**********************************/
 main{
     width: 95%;
-    margin: 0 auto;
-    text-align: center;   
+    margin: 20px auto;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+
 }
 /**********************************/
 /* 4. Estilizando o h1
@@ -92,6 +93,7 @@ h1{
     justify-content: center;
     padding-top: 30px;
     align-items: center;
+
       
 }
 /**********************************/
@@ -106,7 +108,7 @@ h1{
 /**********************************/
 /* 7. estilizando os parágrafos
 /**********************************/
-p{
+div p, h2{
     padding: 10px 0 20px;
     text-shadow: 1px 1px 1px cyan;
 }

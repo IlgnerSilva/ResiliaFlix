@@ -3,7 +3,10 @@
     padding: 0;
     color: white;
   }
-
+/**********************************/
+/* 1. Estilizando o Body 
+com uma figura de background
+/**********************************/
 body{
     background-image: url(../img/bg.jpg);
     background-repeat: no-repeat;
@@ -13,7 +16,7 @@ body{
     
 }
 /**********************************/
-/* 1. Header
+/* 2. Header
 /**********************************/
 .menu-bg{
 	background-color: black;
@@ -64,7 +67,7 @@ img {
   border-radius: 3px;
 }
 /**********************************/
-/* 2. Parte Principal do body
+/* 3. Ajustando o main
 /**********************************/
 main{
     width: 60%;
@@ -77,16 +80,26 @@ main{
     font-family: sans-serif;
     font-size: 22px;
 }
+/**********************************/
+/* 4. Estilizando o h2
+/**********************************/
+h2{
+    text-shadow: 1px 1px 1px cyan;
+    padding-top: 5px;
+}
+/**********************************/
+/* 5. Ajusatando o formulário
+/**********************************/
 form{
     margin-top: 30px;
     margin-bottom: 20px;
 }
-.btn {
+/* .btn {
     border: 1px solid #ced4da;
     padding: 2px 5px;
     background-color: rgb(255, 255, 255);
     height: 37px;
-}
+} */
 
 .fas{
     font-size: 1.5rem;
