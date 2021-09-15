@@ -1,0 +1,173 @@
+/**********************************/
+/* 1. Estilizando o Body 
+com uma figura de background
+/**********************************/
+body{
+  background-image: url(../img/bg.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: sans-serif;
+  color: white;
+}
+
+/**********************************/
+/* 2. Estilizando o Header
+/**********************************/
+.menu-bg{
+	background-color: black;
+}
+
+.menu{
+	display:flex;
+	align-items: center;
+	justify-content: space-around;
+	/* max-width: 960px; */
+	margin: 0 auto;
+	flex-wrap: wrap;	
+}
+
+.gif{
+	margin: 10px;
+  border-radius: 5px;
+}
+
+.nav_list {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.nav_link {
+    padding: 20px 10px;
+    color: white;
+}
+
+img {
+  
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1130px;
+  margin: 0 auto;
+}
+
+.nav_list ol  {
+  list-style: none;
+  margin-left: 20px;
+  display: inline-block;
+  background: #ffa500;
+  color: white;
+  align-self: flex-start;
+  padding: 8px 18px;
+  text-decoration: none;
+  border-radius: 3px;
+}
+
+
+/**********************************/
+/* 3. Ajustando o main
+/**********************************/
+main{
+    width: 95%;
+    margin: 20px auto;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+
+}
+/**********************************/
+/* 4. Estilizando o h1
+/**********************************/
+h1{
+    text-shadow: 1px 1px 1px cyan;
+    font-size: 64px;
+    padding-top: 5px;  
+}
+/**********************************/
+/* 5. Ajusatando o container
+/**********************************/
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 30px;
+    align-items: center;
+
+      
+}
+/**********************************/
+/* 6. Estilizando os avatares
+/**********************************/
+.grupoImg {
+    
+    border-radius: 70px;
+    width: 50%;
+    box-shadow: 2px 2px 1px cyan;  
+}
+/**********************************/
+/* 7. estilizando os parágrafos
+/**********************************/
+div p, h2{
+    padding: 10px 0 20px;
+    text-shadow: 1px 1px 1px cyan;
+}
+/**********************************/
+/* 8. Estilizando os ícones das redes sociais
+/**********************************/
+.redesSociaisImg{
+    border-radius: 10px;
+    width: 70%;  
+}
+/**********************************/
+/* 9. Estilizando o footer
+/**********************************/
+
+.footer {
+    padding: 1.5rem 0 1.5rem 0;
+    border-top: 8px solid #222;
+    background: black;
+    text-align: center;
+    display: grid;
+    justify-items: center;
+  }
+.linksFooter{
+    display: flex;
+}
+.linksFooter a, .linksFooter span{
+    color: white;
+    text-decoration: none;    
+    font-size: 20px;
+    padding: 0 20px 0 20px;
+    font-weight: 600;
+}
+  
+  .footer p {
+    margin-top: 2rem;
+    color: #757575;
+    font-size: 13px;
+  }
+
+
+
+/**********************************/
+/* 10. Tornando responsivo
+/**********************************/
+@media (max-width: 767px){
+    main {
+          width: 100%;
+          font-size: 15px;
+    }
+      .nav_list ol{
+          display: none;
+      }
+      .linksFooter a{
+          display: flex;
+          justify-content: space-evenly;
+          margin: 0 10px;
+          width: 100%;
+      }
+      .linksFooter span{
+          display: none;
+      }
+}
