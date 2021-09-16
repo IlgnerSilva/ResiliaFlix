@@ -1,52 +1,112 @@
 <!DOCTYPE html>
-<html lang="pt-Br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://bootswatch.com/cyborg/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <title>ResiliaFlix</title>
-</head>
-<head>
+<html lang="pt-br">
+  <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-    RESILIAFLIX
-    </title>
-    <link rel="stylesheet" href="./css/index.css" />
+    <title>RESILIAFLIX-ENTRETERIMENTO E DIVERSÃO</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
   </head>
-  <body>
-    <header class="header">
-        <div class="menu-bg">
-			<div class="menu">
-				<div class="menu_logo">
-					<a href="index.html"><img src="img/RESILIAFLIX.gif" alt="logo1">
-				</div><!-- .menu_logo -->
-						<nav class="nav">
-							<ul class="nav_list">
-								<ol><a href="#login" class="nav_link">Entrar</a></ol>
-								<ol><a href="#pesquisa" class="nav_link">Pesquisar</a></ol>
-								<ol><a href="#info" class="nav_link">Contato</a></ol>
-							
 
-							</ul> <!--nav_list-->
-						</nav> <!-- nav -->
-							</div> <!-- .menu -->
-		</div> <!-- .menu-bg -->
-       
-    </header>
-    <main class="main">
+  <body>
+    <header> <!--CABEÇALHO-->
+      <nav>
+        <a class="logo" href="/">RESILIAFLIX</a>
+        <div class="mobile-menu">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+        <ul class="nav-list">
+          <!--li><a href="#">HOME</a></li-->
+          <li><a href="#">PESQUISA</a></li>
+          <li><a href="#">CADASTRO</a></li>
+          <li><a href="#">CONTATO</a></li>
+        </ul>
+      </nav>
+    </header> <!--FIM CABEÇALHO-->
+    
+    <main>
       <div class="main-child">
-        <h1>Entreterimento e diversão, sem limites!</h1>
+        <h1>Entreterimento e diversão, sem limites!<br> <h2>Aqui você encontra o melhor catálogo de filmes</h2></h1>
       </div>
-      
-      <div class="gradient"></div>
+        
+     <div class="gradient"></div>
     </main>
+    <section class="carrosel">
+      <div class="wrapper">
+         <div class="carousel owl-carousel">
+            <div class="card card-1">
+               1
+            </div>
+            <div class="card card-2">
+               2
+            </div>
+            <div class="card card-3">
+               3
+            </div>
+            <div class="card card-4">
+               4
+            </div>
+            <div class="card card-5">
+               5
+            </div>
+            <div class="card card-5">
+               6
+            </div>
+            <div class="card card-5">
+               7
+            </div>
+            <div class="card card-5">
+               8
+            </div>
+            <div class="card card-5">
+               9
+            </div>
+            <div class="card card-5">
+               10
+            </div>
+            <div class="card card-5">
+               11
+            </div>
+            <div class="card card-5">
+               12
+            </div>
+         </div>
+      </div>
+      <script>
+         $(".carousel").owlCarousel({
+           margin: 20,
+           loop: true,
+           autoplay: true,
+           autoplayTimeout: 2000,
+           autoplayHoverPause: true,
+           responsive: {
+             0:{
+               items:1,
+               nav: false
+             },
+             600:{
+               items:2,
+               nav: false
+             },
+             1000:{
+               items:3,
+               nav: false
+             }
+
+           }
+         });
+      </script>
+    </section>
     <section class="section">
       <div class="container">
         <div class="grid">
           <div>
-            <h1>Aproveite em qualquer lugar, e quando quiser</h1>
+            <h2>Aproveite em qualquer lugar, e quando quiser</h2>
             <p>
               Assista em Smart TVs, PlayStation, Xbox, Chromecast, Apple TV,
               aparelhos de Blu-ray, celular, tablet, smart TV ou notebook.
@@ -62,7 +122,7 @@
       <div class="container">
         <div class="grid">
           <div>
-            <h1>Utilize o modo aleatório de indicação</h1>
+            <h2>Utilize o modo aleatório de indicação</h2>
             <p>
               Tá em dúvida do que assistir? Ou, nem sabe o que quer ver?
               Para usar o seu tempo assistindo, e não procurando desenvolvemos 
@@ -75,13 +135,29 @@
         </div>
       </div>
     </section>
+    <!--section>
+        <div>
+        <form class="form-cta">
+            <input type="text" placeholder="Email" />
+            <button>Cadastrar</button>
+          </form>
+        </div>
+    </section-->
+
     <footer class="footer">
-      <form class="form-cta">
-        <input type="text" placeholder="Email" />
-        <button>Cadastrar</button>
-      </form>
-      <p>Copyright © 2021 RESILIAFLIX Brasil. Todos os direitos reservados, projeto criado para fins educativos. </p>
+       <div class= "linksFooter">
+            <a href="../index.html">Home</a>
+            <span>-</span>
+            <a href="contato.html">Quem Somos</a>
+            <span>-</span>
+            <a href="cadastro.html">Cadastra-se aqui</a>
+       </div> 
+
+
+        <p>Copyright © 2021 RESILIAFLIX Brasil. Todos os direitos reservados, projeto criado para fins educativos. </p>
+
     </footer>
+    </main>
+    <script src="javascript/mobile-navbar.js"></script>
   </body>
 </html>
-
