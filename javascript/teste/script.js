@@ -6,7 +6,7 @@ search.addEventListener('input', function () {
   pedido.open("GET", `https://www.omdbapi.com/?t=${this.value}&apikey=18c57453`)
   console.log(pedido)
   console.log(this.value.replaceAll(' ', '+'))
-  pedido.onerror = function(){
+  pedido.onerror = function () {
     log.innerHTML = `Um erro ocorreu, por favor, tente novamente.`
   }
 
@@ -21,12 +21,6 @@ search.addEventListener('input', function () {
       sinopse.innerHTML = `Sinopse: ${guarda.Plot}`
       document.querySelector('body').prepend(cria)
     }
-
   }
-
-
   pedido.send();
 });
-
-
-
