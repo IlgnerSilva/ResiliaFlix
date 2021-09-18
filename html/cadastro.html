@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/cadastro.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script defer src="../javascript/apiCep/cadastroUsuario.js"></script>
-    <script defer src="../javascript/apiCep/cep.js"></script>
+    <script defer src="../javascript/Cadastro de usuarios e api CEP/cadastroUsuario.js"></script>
+    <script defer src="../javascript/Cadastro de usuarios e api CEP/cep.js"></script>
     <!-- COLOCAR O LINK DO SCRIP DO JS <script src="" defer></script>  -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/611a588430.js" crossorigin="anonymous" defer></script>
@@ -37,31 +37,31 @@
         <h2>Para ter acesso a todos os filmes do catalogo, faça seu cadastro:</h2>
         <form>
             <div class="form-group">
-                <label for="nome">Nome Completo *</label>
-                <input type="text" class="form-control" id="nome">
+                <label for="nome" id="label-nome">* Nome Completo</label>
+                <input type="text" class="form-control" id="cadastra-nome">
             </div>
             <div class="form-row">
                 <div class="form-group col-md-6">
-                    <label for="inputEmail4">Email *</label>
-                    <input type="email" class="form-control" id="inputEmail4">
+                    <label for="cadastra-email" id="label-email">* Email</label>
+                    <input type="email" class="form-control" id="cadastra-email">
                 </div>
                 <div class="form-group col-md-6">
-                    <label for="rg">Identidade</label>
-                    <input type="email" class="form-control" id="rg">
+                    <label for="cadastra-identidade" id="label-identidade">* Identidade</label>
+                    <input type="number" class="form-control" id="cadastra-identidade">
                 </div>
                 <div class="form-group col-md-6">
-                    <label for="inputPassword4">Senha *</label>
-                    <input type="password" class="form-control" id="inputPassword4" placeholder="Digite sua senha">
+                    <label for="cadastra-senha" id="label-senha">* Senha</label>
+                    <input type="password" class="form-control" id="cadastra-senha" placeholder="Digite sua senha">
                 </div>
                 <div class="form-group col-md-6">
-                    <label for="confiSenha">Confirme sua senha *</label>
-                    <input type="password" class="form-control" id="confiSenha" placeholder="Confirme sua senha">
+                    <label for="confirma-senha" id="label-confirma-senha">* Confirme sua senha *</label>
+                    <input type="password" class="form-control" id="confirma-senha" placeholder="Confirme sua senha">
                 </div>
             </div>
             
             <div class="form-row">
                 <div class="form-group col-md-6" >
-                    <label for="inputCEP">CEP *</label> 
+                    <label for="inputCEP">* CEP (Apenas números)</label> 
                     <div id="cep">
                         <input type="text" class="form-control" id="inputCEP" placeholder="Digite seu CEP">
                         <a class="buscacep" target="about:blank" href="https://buscacepinter.correios.com.br/app/endereco/index.php">Não sabe seu CEP?</a>
@@ -100,8 +100,9 @@
             </div>
 
           </form>
-          <p id="msgCadastro"></p>
-          <button type="button" class="btnCadastrar">Cadastrar</button>
+          <div id="msg-error"></div>
+          <div id="msg-success"></div>
+          <button class="btnCadastrar">Cadastrar</button>
     </main>
 
     <footer class="footer">
