@@ -92,7 +92,7 @@ nav {
     display: block;
   }
 }
-
+ 
 .nav-list.active {
   transform: translateX(0);
 }
