@@ -31,14 +31,14 @@ function btnScroll() {
 		scrollBtn.style.display = 'block'
 		if(window.scrollY >= 1100){
 			//Se o botão estiver embaixo, ele fica branco e troca o atributo
+			scrollBtn.style.color = 'white'
 			scrollBtn.classList.remove('fa-arrow-down')
 			scrollBtn.classList.add('fa-arrow-up')
-			scrollBtn.style.color = 'white'
 		} else {
 			//Se o botão estiver em cima, ele volta ao preto e troca o atributo
-			scrollBtn.classList.add('fa-arrow-down')
-			scrollBtn.classList.remove('fa-arrow-up')
 			scrollBtn.style.color = 'black'
+			scrollBtn.classList.remove('fa-arrow-up')
+			scrollBtn.classList.add('fa-arrow-down')
 		}
 	} else {
 		//Esconde o botão
