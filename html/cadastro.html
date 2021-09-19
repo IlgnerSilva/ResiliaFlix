@@ -4,53 +4,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/cadastro.css">
+    
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script defer src="../javascript/Cadastro de usuarios e api CEP/cadastroUsuario.js"></script>
     <script defer src="../javascript/Cadastro de usuarios e api CEP/cep.js"></script>
     <!-- COLOCAR O LINK DO SCRIP DO JS <script src="" defer></script>  -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/611a588430.js" crossorigin="anonymous" defer></script>
+    <link rel="stylesheet" href="../css/cadastro.css">
+    <link rel="stylesheet" href="../css/obrigatorios.css">
     <title>Cadastre-se!</title>
 </head>
 <body>
-    <header>
-        <div class="menu-bg">
-			<div class="menu">
-				<div class="menu_logo">
-					<a href="../index.html"><img src="../img/RESILIAFLIX.gif" alt="logo1">
-				</div><!-- .menu_logo -->
-				<nav class="nav">
-					<ul class="nav_list">
-                        <ol><a href="#info" class="nav_link">Cadastre-se</a></ol>
-				    	<ol><a href="#login" class="nav_link">Entrar</a></ol>
-						<ol><a href="#pesquisa" class="nav_link">Pesquisar</a></ol>
-						<ol><a href="#info" class="nav_link">Contato</a></ol>
-					</ul> <!--nav_list-->
-				</nav> <!-- nav -->
-			</div> <!-- .menu -->
-		</div> <!-- .menu-bg -->
-
-    </header>
+    <header> <!--CABEÇALHO-->
+        <nav>
+            <div class="box-logo">
+                <img src="../img/logo.jpg" alt="Logo da ResiliaFlix" class="img-logo">
+                <a class="logo" href="../index.html">RESILIA<span>FLIX</span></a>
+            </div>
+          <div class="mobile-menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+          <ul class="nav-list">
+            <!--li><a href="../index.html">HOME</a></li-->
+            <li><a href="#">ENTRAR</a></li>
+            <li><a href="./html/cadastro.html">CADASTRO</a></li>
+            <li><a href="#">CONTATO</a></li>
+          </ul>
+        </nav>
+      </header> <!--FIM CABEÇALHO-->
 
     <main>
         <h2>Para ter acesso a todos os filmes do catalogo, faça seu cadastro:</h2>
+        <h6>* Campos obrigatórios para preenchimento</h6>
         <form>
             <div class="form-group">
-                <label for="nome" id="label-nome">* Nome Completo</label>
+                <label for="nome" id="label-nome">* Nome Completo </label>
                 <input type="text" class="form-control" id="cadastra-nome">
             </div>
             <div class="form-row">
                 <div class="form-group col-md-6">
-                    <label for="cadastra-email" id="label-email">* Email</label>
+                    <label for="cadastra-email" id="label-email">* Email </label>
                     <input type="email" class="form-control" id="cadastra-email">
                 </div>
                 <div class="form-group col-md-6">
-                    <label for="cadastra-identidade" id="label-identidade">* Identidade</label>
+                    <label for="cadastra-identidade" id="label-identidade">* Identidade </label>
                     <input type="number" class="form-control" id="cadastra-identidade">
                 </div>
                 <div class="form-group col-md-6">
-                    <label for="cadastra-senha" id="label-senha">* Senha</label>
+                    <label for="cadastra-senha" id="label-senha">* Senha </label>
                     <input type="password" class="form-control" id="cadastra-senha" placeholder="Digite sua senha">
                 </div>
                 <div class="form-group col-md-6">
@@ -61,7 +65,7 @@
             
             <div class="form-row">
                 <div class="form-group col-md-6" >
-                    <label for="inputCEP">* CEP (Apenas números)</label> 
+                    <label for="inputCEP">* CEP <span> (apenas números)</span></label> 
                     <div id="cep">
                         <input type="text" class="form-control" id="inputCEP" placeholder="Digite seu CEP">
                         <a class="buscacep" target="about:blank" href="https://buscacepinter.correios.com.br/app/endereco/index.php">Não sabe seu CEP?</a>
@@ -74,11 +78,11 @@
                 
                 <div class="form-group col-md-6">
                     <label for="inputEstado">Estado</label>
-                    <input type="text" class="form-control" id="inputEstado">
+                    <input type="text" class="form-control" id="inputEstado" readonly>
                 </div>
                 <div class="form-group col-md-6">
                     <label for="inputCity">Cidade</label>
-                    <input type="text" class="form-control" id="inputCity">
+                    <input type="text" class="form-control" id="inputCity" readonly>
                 </div>
                 
                 <div class="form-group col-md-8">
@@ -95,7 +99,7 @@
                 </div>
                 <div class="form-group col-md-6">
                     <label for="bairro">Bairro</label>
-                    <input type="text" class="form-control" id="bairro">
+                    <input type="text" class="form-control" id="bairro" readonly>
                 </div>
             </div>
 
