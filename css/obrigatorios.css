@@ -129,10 +129,7 @@ footer {
      max-width: 100%;    
       justify-content: center;
   }
-  main {
-    width: 100%;
-    font-size: 15px;
-  }
+
   .nav_list ol{
     display: none;
   }
