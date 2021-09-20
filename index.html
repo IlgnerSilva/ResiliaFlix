@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RESILIAFLIX-ENTRETERIMENTO E DIVERSÃO</title>
     <link rel="stylesheet" href="css/style.css" />
+    <script defer src="./javascript/Login e Modal/modal.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script defer src="javascript/anim.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
@@ -23,7 +25,7 @@
         </div>
         <ul class="nav-list">
           <!--li><a href="#">HOME</a></li-->
-          <li><a href="./html/login.html">ENTRAR</a></li>
+          <li><a id="login" href="#">ENTRAR</a></li>
           <li><a href="./html/cadastro.html">CADASTRO</a></li>
           <li><a href="./html/contato.html">CONTATO</a></li>
         </ul>
@@ -223,12 +225,23 @@
             <a href="cadastro.html">Cadastra-se aqui</a>
        </div> 
 
-
         <p>Copyright © 2021 RESILIAFLIX Brasil. Todos os direitos reservados, projeto criado para fins educativos. </p>
 
     </footer>
     </main>
-    <script src="javascript/anim.js"></script>
+    
+    <div class="modal-container">
+      <div class="modal">
+        <button class="fechar-modal">x</button>
+        <h3>Entrar</h3>
+        <form class="form-modal">
+          <input type="email" class="input-modal"  placeholder="Email">
+          <input type="password" class="input-modal"  placeholder="Senha">
+          <input type="button" class="input-button" value="Entrar">
+        </form>
+      </div>
+    </div> 
+    
     <script src="javascript/mobile-navbar.js"></script>
   </body>
 </html>
