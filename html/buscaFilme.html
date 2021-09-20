@@ -5,31 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!--Referenciando os arquivos .js API PARA TRAZER INFORMAÇÕES DOS FILMES-->    
-    <script src=""></script>
-
-    <!-- JS para o header -->
-    <script defer src="https://kit.fontawesome.com/611a588430.js" crossorigin="anonymous" ></script>
-    <script defer src="../javascript/mobile-navbar.js"></script>
-    <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <!--Referenciando os arquivos .js-->
+    <!-- JS PARA BUSCAR NA API E DEVOLVER O FILME -->
     
-    <!--Referenciando os arquivos .css-->
+    
+    
+    <!-- JS para o header -->
+    <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script defer src="../javascript/mobile-navbar.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script defer src="https://kit.fontawesome.com/611a588430.js" crossorigin="anonymous" ></script>
+    
+    <!--Referenciando os arquivos .css-->    
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/infoDeFilmes.css">
+    <link rel="stylesheet" href="../css/buscaFilme.css">
     <link rel="stylesheet" href="../css/obrigatorios.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
-     
-    <title>Informações do Filme</title>
+    
+    <title>Pesquisa de Filme</title>
 </head>
 
 <body>
-    <header> <!--CABEÇALHO-->
+    <header>
         <nav>
             <div class="box-logo">
                 <img src="../img/logo.jpg" alt="Logo da ResiliaFlix" class="img-logo">
                 <a class="logo" href="../index.html">RESILIA<span>FLIX</span></a>
-       
             </div>
 
             <div class="mobile-menu">
@@ -43,8 +43,7 @@
                 <li><a data-toggle="modal" href="#modal">ENTRAR</a></li>
                 <li><a href="./cadastro.html">CADASTRAR</a></li>
                 <li><a href="./contato.html">QUEM SOMOS</a></li>
-                <li><a href="./buscaFilme.html"><i class="fas fa-search"></i></a></li>
-               
+                <li><a href="./buscaFilme.html"><i class="fas fa-search"></i></a></li>               
           </ul>
         </nav>
 
@@ -110,26 +109,32 @@
             </div>
         </div>
 
-
-    </header> <!--FIM CABEÇALHO-->
+    </header>
     
     <main>
-        <h1>Nome do Filme aparecerá aqui</h1>
-        <section class = "container">                      
-            <div class= "media">
-                <p>Score: </p>
-                <p>Ano: </p>
-                <p>Duração: </p>
-                <p>Indicação Faixa Etária: </p>
-                <p>Gênero do Filme: </p>
-                <p>Diretor: </p>
-                <p>Elenco: </p>
-                <p>Sinopse: </p>
-            </div>
-            <div>
+        <!--Formuário de pesquisa do filme-->
+        <h1>Busca de Filme</h1>
+        <section class = "container">
+            <form class="formulario">
+                <div class="form-group col-md-12" >
+                  <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Pesquise aqui:">
+                </div>
+                <button type="submit" class="btnCadastrar">Pesquisar</button>
+            </form> 
+             
+            <div class="informacoes">
+              <!-- Envolver a imagem com uma ancora para clicar e levar a pagina de informação do filme -->
                 <img class="mediaImg" src="../img/roloDeFilme.jfif" alt="">
+                <div class="mediaBody">
+                  <h4>Nome do Filme aparecerá aqui</h4>
+                  <p>Breve sinopse do Filme aparecerá aqui.</p>
+                  <a href="./infoDeFilme.html">+ Informações</a>
+                </div>
+                
             </div>
+
         </section>
+
     </main>
 
     <!-- footer -->

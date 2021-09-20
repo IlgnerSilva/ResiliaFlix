@@ -5,100 +5,189 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+    <!--Referenciando os arquivos .js-->    
+    <script defer src="https://kit.fontawesome.com/611a588430.js" crossorigin="anonymous" ></script>
+
+    <!-- JS para o header -->
+    <script defer src="../javascript/mobile-navbar.js"></script>
+    <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    
     <!--Referenciando os arquivos .css-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/contato.css">
     <link rel="stylesheet" href="../css/obrigatorios.css">
-
-    <!--Referenciando os arquivos .js-->
-    <script src="" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     
-    <title>Contato</title>
+    
+    <title>Quem somos?</title>
 </head>
+
 <body>
     <header> <!--CABEÇALHO-->
         <nav>
-          <a class="logo" href="/">RESILIAFLIX</a>
-          <div class="mobile-menu">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-          </div>
-          <ul class="nav-list">
-            <li><a href="../index.html">HOME</a></li>
-            <li><a href="./infoDeFilme.html">PESQUISA</a></li>
-            <li><a href="./cadastro.html">CADASTRO</a></li>
-            <!--li><a href="#">CONTATO</a></li-->
+            <div class="box-logo">
+                <img src="../img/logo.jpg" alt="Logo da ResiliaFlix" class="img-logo">
+                <a class="logo" href="../index.html">RESILIA<span>FLIX</span></a>
+       
+            </div>
+
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            
+            <ul class="nav-list">
+                <li><a href="../index.html">HOME</a></li>
+                <li><a data-toggle="modal" href="#modal">ENTRAR</a></li>
+                <li><a href="./cadastro.html">CADASTRAR</a></li>
+                <li><a href="./buscaFilme.html"><i class="fas fa-search"></i></a></li>
+               
+                <!-- <li><a href="#">CONTATO</a></li> -->
           </ul>
         </nav>
-      </header> <!--FIM CABEÇALHO-->
+
+        <!--MODAL Login-->
+        <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="form-group">
+                      <label for="recipient-name" class="col-form-label">Insira seu e-mail:</label>
+                      <input type="text" class="form-control" id="recipient-name" placeholder="Seu e-mail">
+                    </div>
+                    <div class="form-group">
+                      <label for="message-text" class="col-form-label">Insira sua senha:</label>
+                      <!--inserido para teste-->
+                      <input type="password" class="form-control" id="message-text">
+                      <!--textarea class="form-control" id="message-text"></textarea--><!--removido para teste-->
+                    </div>
+
+                    <a href="#modalEsqueciASenha">Esqueci a senha</a>
+                </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-warning">Entrar</button>
+                    <!--data-dismiss="modal" fecha o modal-->
+                </div>
+              </div>
+            </div>
+        </div>
+
+            <!--MODAL - Esqueci a Senha-->
+        <div class="modal fade" id="modalEsqueciASenha" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Esqueci a senha</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="form-group">
+                      <label for="recipient-name" class="col-form-label">Insira seu e-mail:</label>
+                      <input type="text" class="form-control" id="recipient-name" placeholder="Seu e-mail">
+                    </div>
+                </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-warning">Recupear senha</button>
+                    <!--data-dismiss="modal" fecha o modal-->
+                </div>
+              </div>
+            </div>
+        </div>
+
+
+    </header> <!--FIM CABEÇALHO-->
     
     <main>
         <!--Contato: mostrando a equipeDev-->
         <h1>Equipe ResiliaFlix</h1>
+        
         <section class = "container">
-           <div>
+           <div class="integrante">
                 <img src="../img/camilaLogo.jpeg" alt="" class="grupoImg">
-                <h2>Camila</h2>
-                <h2>Albuquerque</h2>
-                <p>Time HTML e CSS</p>
-                <a href="https://github.com/Camilalb">
-                    <img src="../img/logoGitHub.png" class="redesSociaisImg">
-                </a>
-                <a href="https://www.linkedin.com/in/camila-viana-de-albuquerque-73286127/">
-                    <img src="../img/logoLinkedIn.jpg" alt="" class="redesSociaisImg">
-                </a>
+                <div>
+                    <h2>Camila Viana</h2>
+                    <p>Time HTML e CSS</p>
+                    <a href="https://github.com/Camilalb" target="about:blank">
+                        <img src="../img/logoGitHub.png" class="redesSociaisImg">
+                    </a>
+                    <a href="https://www.linkedin.com/in/camila-viana-de-albuquerque-73286127/" target="about:blank">
+                        <img src="../img/logoLinkedIn.jpg" alt="" class="redesSociaisImg">
+                    </a>
+                </div>
 
            </div>
-           <div>
+           <div class="integrante">
                 <img src="../img/ilgnerLogo.jfif" alt="" class="grupoImg">
-                <h2>Ilgner</h2>
-                <h2>Silva</h2>
-                <p>Time JavaScript</p>
-                <a href="https://github.com/IlgnerSilva">
-                    <img src="../img/logoGitHub.png" class="redesSociaisImg">
-                </a>
-                <a href="https://www.linkedin.com/in/">
-                    <img src="../img/logoLinkedIn.jpg" alt="" class="redesSociaisImg">
-                </a>
+                <div>
+                    <h2>Ilgner Silva</h2>
+                    <p>Time JavaScript</p>
+                    <a href="https://github.com/IlgnerSilva" target="about:blank">
+                        <img src="../img/logoGitHub.png" class="redesSociaisImg">
+                    </a>
+                    <a href="https://www.linkedin.com/in/ilgner-silva-dev/" target="about:blank">
+                        <img src="../img/logoLinkedIn.jpg" alt="" class="redesSociaisImg">
+                    </a>
+                </div>                
            </div>
 
-           <div>
+           <div class="integrante">
                 <img src="../img/vihLogo" alt="" class="grupoImg">
-                <h2>Maria</h2>
-                <h2>Vitoria</h2>
-                <p>FRONT-END</p>
-                <a href="https://github.com/V1t0r1a-C001">
-                    <img src="../img/logoGitHub.png" class="redesSociaisImg">
-                </a>
-                <a href="https://www.linkedin.com/in/">
-                    <img src="../img/logoLinkedIn.jpg" alt="" class="redesSociaisImg">
-                </a>    
+                <div>
+                    <h2>Maria Vitoria</h2>
+                    <p>Time HTML e CSS</p>
+                    <a href="https://github.com/V1t0r1a-C001"  target="about:blank">
+                        <img src="../img/logoGitHub.png" class="redesSociaisImg">
+                    </a>
+                    <a href="https://www.linkedin.com/in/"  target="about:blank">
+                        <img src="../img/logoLinkedIn.jpg" alt="" class="redesSociaisImg">
+                    </a>  
+                </div>
             </div>
  
-            <div>
-                <img src="../img/jrLogo.jpeg" alt="" class="grupoImg">
-                <h2>Nilton</h2>
-                <h2>Júnior</h2>
-                <p>Time HTML e CSS</p>
-                <a href="https://github.com/NiltonCortesJr">
-                    <img src="../img/logoGitHub.png" class="redesSociaisImg">
-                </a>
-                <a href="https://www.linkedin.com/in/niltoncjr/">
-                    <img src="../img/logoLinkedIn.jpg" alt="" class="redesSociaisImg">
-                </a>
+            <div class="integrante">
+                <img src="../img/niltonLogo.jpg" alt="" class="grupoImg">
+                
+                <div>
+                    <h2>Nilton Júnior</h2>
+                    <p>Time HTML e CSS</p>
+                    <a href="https://github.com/NiltonCortesJr"  target="about:blank">
+                        <img src="../img/logoGitHub.png" class="redesSociaisImg">
+                    </a>
+                    <a href="https://www.linkedin.com/in/niltoncjr/" target="about:blank">
+                        <img src="../img/logoLinkedIn.jpg" alt="" class="redesSociaisImg">
+                    </a>
+                </div>
             </div>
 
-            <div>
+            <div class="integrante">
                 <img src="../img/viniLogo.jpeg" alt="" class="grupoImg">
-                <h2>Vinicius</h2>
-                <h2>Ribeiro</h2>
-                <p>Tima JavaScript</p>
-                <a href="https://github.com/viniciusr-cmd">
-                    <img src="../img/logoGitHub.png" class="redesSociaisImg">
-                </a>
-                <a href="https://www.linkedin.com/in/">
-                    <img src="../img/logoLinkedIn.jpg" alt="" class="redesSociaisImg">
-                </a>
+                <div>
+                    <h2>Vinicius Ribeiro</h2>
+                    <p>Tima JavaScript</p>
+                    <a href="https://github.com/viniciusr-cmd" target="about:blank">
+                        <img src="../img/logoGitHub.png" class="redesSociaisImg">
+                    </a>
+                    <a href="https://www.linkedin.com/in/viniciusribeiro99/" target="about:blank">
+                        <img src="../img/logoLinkedIn.jpg" alt="" class="redesSociaisImg">
+                    </a>    
+                </div>
+                               
             </div>
           
         </section>

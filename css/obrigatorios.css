@@ -30,6 +30,7 @@ a:hover {
 
 .logo > span {
     font-weight: 600;
+    color: whitesmoke;
 }
     
 nav {
@@ -46,13 +47,22 @@ nav {
     display: flex;
     margin-bottom: 0;
 }
+
+.nav-list.active {
+  transform: translateX(0);
+  height: 200px;
+  width: 200px;
+  border-radius: 0 0 8px 8px;
+  border-left: 1px solid white;
+  border-bottom: 1px solid white;
+}
     
 .nav-list li {
     letter-spacing: 3px;
     margin-left: 32px;
 }
 
-    
+
 .mobile-menu {
     display: none;
     cursor: pointer;
@@ -66,9 +76,11 @@ nav {
     transition: 0.3s;
 }
     
-.nav-list.active {
-    transform: translateX(0);
-}
+/* Botão de Pesquisar */
+.fas, .fa-search{
+  color: white;
+  font-size: 25px;
+} 
     
 @keyframes navLinkFade {
     from {
@@ -137,6 +149,7 @@ footer {
     display: flex;
     justify-content: space-evenly;
     margin: 0 10px;
+    font-size: 15px;
     width: 100%;
   }
   .linksFooter span{
@@ -164,6 +177,8 @@ footer {
   }
   .mobile-menu {
     display: block;
-
   }
+  .col-md-12{
+    position: static;
+}
 }
