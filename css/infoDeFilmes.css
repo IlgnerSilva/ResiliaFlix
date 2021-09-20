@@ -44,8 +44,8 @@ body{
 }
 
 img {
-  
-  max-width: 100%;
+  width: 100px;
+  /*height: 150px;*/
 }
 
 .container {
@@ -81,7 +81,7 @@ main{
 /**********************************/
 h1{
     text-shadow: 1px 1px 1px cyan;
-    font-size: 64px;
+    font-size: 54px;
     padding-top: 5px;  
 }
 /**********************************/
@@ -89,22 +89,47 @@ h1{
 /**********************************/
 .container{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     padding-top: 30px;
     align-items: center;
+    width: 100%;  
+    min-height: 400px;
+}
 
-      
+form{
+  display: flex;
+  align-items:flex-start;
+  justify-content: center;
+  width: 100%;
+}
+
+form > div{
+  margin:0;
+}
+.btnCadastrar{
+  background: #ffa500;
+  color: rgb(255, 255, 255);
+  align-self: flex-start;
+  padding: 2px 45px;
+  border-radius: 8px;
+  text-shadow: 3px 3px 3px black;
+  font-weight: bold;
+  font-size: 18px;
+  /*margin: 10px auto;*/
+  cursor: pointer;
+  height: 38px;
 }
 /**********************************/
-/* 6. Estilizando os avatares
+/* 6. Estilizando a div media
 /**********************************/
-.grupoImg {
-    
-    border-radius: 70px;
-    width: 50%;
-    box-shadow: 2px 2px 1px cyan;  
+.media{
+  display: none;
+  width: 680px;
+  padding-top: 15px;
 }
+
+
 /**********************************/
 /* 7. estilizando os parágrafos
 /**********************************/
@@ -115,10 +140,7 @@ div p, h2{
 /**********************************/
 /* 8. Estilizando os ícones das redes sociais
 /**********************************/
-.redesSociaisImg{
-    border-radius: 10px;
-    width: 70%;  
-}
+
 /**********************************/
 /* 9. Estilizando o footer
 /**********************************/
@@ -151,23 +173,77 @@ div p, h2{
 
 
 /**********************************/
-/* 10. Tornando responsivo
+/* 10. Responsivo
 /**********************************/
 @media (max-width: 767px){
-    main {
-          width: 100%;
-          font-size: 15px;
-    }
-      .nav_list ol{
-          display: none;
-      }
-      .linksFooter a{
-          display: flex;
-          justify-content: space-evenly;
-          margin: 0 10px;
-          width: 100%;
-      }
-      .linksFooter span{
-          display: none;
-      }
+  main {
+    width: 100%;
+    font-size: 15px;
+  }
+
+  .nav_list ol{
+    display: none;
+  }
+
+  .linksFooter a{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 10px;
+    width: 100%;
+    font-size: 15px;
+    align-self: center;
+  }
+
+  .linksFooter span{
+    display: none;
+  }
+
+  h1{
+    text-shadow: 1px 1px 1px cyan;
+    font-size: 24px;
+  }
+
+  .container{
+    display: flex;
+    align-items:stretch;
+    padding-top: 10px;
+    justify-content: flex-start;
+  }
+
+  form{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 20px;
+  }
+
+  .btnCadastrar{
+    align-self: center;
+  }
+  
+  div.media{
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .mediaImg {
+    align-self: center;
+    width: 100px;
+    height: 150px;
+  }
+  h5{
+    padding-top: 20px;
+    justify-items: center;
+    width: 100%;
+  }
+  
+  p{
+    align-self: center;
+    width: 100%;
+  }
+    
 }
