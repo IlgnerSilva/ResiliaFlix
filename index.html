@@ -5,19 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RESILIAFLIX-ENTRETERIMENTO E DIVERSÃO</title>
-    <link rel="stylesheet" href="css/style.css" />
+    
     <script defer src="./javascript/Login e Modal/modal.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script defer src="javascript/anim.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    
+    
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/obrigatorios.css">
   </head>
 
   <body>
     <header> <!--CABEÇALHO-->
       <nav>
-        <a class="logo" href="/">RESILIAFLIX</a>
+        <div class="box-logo">
+          <img src="./img/logo.jpg" alt="Logo da ResiliaFlix" class="img-logo">
+          <a class="logo" href="./index.html">RESILIA<span>FLIX</span></a>
+ 
+      </div>
+
         <div class="mobile-menu">
           <div class="line1"></div>
           <div class="line2"></div>
@@ -26,8 +35,9 @@
         <ul class="nav-list">
           <!--li><a href="#">HOME</a></li-->
           <li><a id="login" href="#">ENTRAR</a></li>
-          <li><a href="./html/cadastro.html">CADASTRO</a></li>
-          <li><a href="./html/contato.html">CONTATO</a></li>
+          <li><a href="./html/cadastro.html">CADASTRAR</a></li>
+          <li><a href="./html/contato.html">QUEM SOMOS</a></li>
+          <li><a href="./buscaFilme.html"><i class="fas fa-search"></i></a></li>
         </ul>
       </nav>
     </header> <!--FIM CABEÇALHO-->
@@ -187,15 +197,15 @@
     </section>
     <section class="somos" id="somos">
       <h2 class="section_title"> <br>Aproveite em qualquer lugar, e quando quiser </h2>
+      
       <div class="somos-c">
         <div class="somos-c_texto">
-          <p>
-            Assista em Smart TVs, PlayStation, Xbox, Chromecast, Apple TV,
+          <p>Assista em Smart TVs, PlayStation, Xbox, Chromecast, Apple TV,
             aparelhos de Blu-ray, celular, tablet, smart TV ou notebook.
-        </div> <!-- somos-c_texto -->
-            <div class="somos-c_img">
-            <img src="img/bg1.png" alt="Quem somos">
-            </div> <!--somos-c_img-->
+          </div> <!-- somos-c_texto -->
+          <div class="somos-c_img">
+              <img src="img/bg1.png" alt="Quem somos">
+          </div> <!--somos-c_img-->
       </div> <!-- somos-c -->
     </section> <!-- .somos-->
 
@@ -204,15 +214,14 @@
       <div class="somos-c">
         <div class="somos-c_texto">
           <p>
-            <br>Tá em dúvida do que assistir?<br> Ou, nem sabe o que quer ver?
+            Tá em dúvida do que assistir?<br> Ou, nem sabe o que quer ver?
             Para usar o seu tempo assistindo, e não procurando desenvolvemos 
             essa forma prática, onde te recomendamos algo com o seu perfil do dia!
-            
-          </p>
+            </p>
         </div> <!-- somos-c_texto -->
-            <div class="somos-c_img">
-            <img src="img/dado1.gif" alt="Quem somos">
-            </div> <!--somos-c_img-->
+        <div class="somos-c_img">
+          <img src="img/dado1.gif" alt="Quem somos">
+        </div> <!--somos-c_img-->
       </div> <!-- somos-c -->
     </section> <!-- .somos-->
 
@@ -237,6 +246,7 @@
         <form class="form-modal">
           <input type="email" class="input-modal"  placeholder="Email">
           <input type="password" class="input-modal"  placeholder="Senha">
+          <a href="#modalEsqueciASenha">Esqueci a senha</a>
           <input type="button" class="input-button" value="Entrar">
         </form>
       </div>

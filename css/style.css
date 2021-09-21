@@ -355,18 +355,19 @@ background-position: 0% 50%;
   flex: 1 1 350px;
 }*/
 .somos{
-	max-width: 1310px;
+	padding: 0 40px;
 	margin: 0 auto;
-  background-color: #FFA500;
+  background-color: #000000;
 }
 .somos h2{
-  color: #ff1e00;
+  color: #ffa500;
   font-size: 50px;
-  text-align: center
+  text-align: center;
+  margin-bottom: 20px;
 }
 .somos p{
   font-size: 26px;
-  color: #ff1e00;
+  color: #ffa500;
   line-height: 21.82px;
   padding: 0 10px;
 }
@@ -379,10 +380,13 @@ background-position: 0% 50%;
 
 .somos-c_texto{
 	flex: 6 1 160px;
+  padding: 0 40px;
 }
 
 .somos-c_img{
 	flex: 1 1 350px;
+  margin: 10px auto;
+  padding: 0 40px;
 }
 .img-tv img {
   position: relative;
@@ -428,48 +432,7 @@ background-position: 0% 50%;
   color: white;
 }*/
 
-/**********************************/
-/* .FOOTER/RODAPÉ 
-/**********************************/
 
-/*.footer {
-  padding: 4rem 0 2rem 0;
-  border-top: 8px solid #222;
-  background: black;
-  text-align: center;
-  display: grid;
-  justify-items: center;
-}
-
-.footer p {
-  margin-top: -2rem;
-  color: #757575;
-  font-size: 13px;
-}*/
-.footer {
-    padding: 1.5rem 0 1.5rem 0;
-    border-top: 8px solid #222;
-    background: black;
-    text-align: center;
-    display: grid;
-    justify-items: center;
-  }
-.linksFooter{
-    display: flex;
-}
-.linksFooter a, .linksFooter span{
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
-    margin-right: 35px;
-    font-weight: 600;
-}
-
-  .footer p {
-    margin-top: 2rem;
-    color: #757575;
-    font-size: 13px;
-  }
 /*@media  @media(max-width: 767px){
 .linksFooter a{
             display: flex;
@@ -491,54 +454,4 @@ background-position: 0% 50%;
   z-index: 999;
   cursor: pointer;
 }
-/* 
-/*Estilização Modal*/
 
-.modal-container{
-  width: 100%;
-  height: 100vh;
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 2000;
-  display: none;
-  justify-content: center;
-  align-items: center;
-}
-
-.modal-container.mostrar-modal{
-  display: none;
-}
-
-.modal{
-  background-color: white;
-  width: 60%;
-  min-width: 300px;
-  padding: 40px;
-  border: solid 10px #0072bc;
-  box-shadow: 0 0 0 10px white;
-  position: relative;
-}
-
-.fechar-modal{
-  position: absolute;
-  top: -30px;
-  right: -30px;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  border: 4px solid white;
-  background-color: #0072bc;
-  color: white;
-  cursor: pointer;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.3);
-}
-
-.form-modal input{
-  display: block;
-  margin-bottom: 10px;
-  font-size: 15px;
-  padding: 10px;
-  width: 100%;
-} 
