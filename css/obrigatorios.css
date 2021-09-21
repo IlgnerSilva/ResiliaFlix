@@ -133,58 +133,7 @@ footer {
   font-size: 13px;
 }
 
-/**********************************/
-/* 3. Modal
-/**********************************/
 
-.modal-container{
-  width: 100%;
-  height: 100vh;
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 2000;
-  display: none;
-  justify-content: center;
-  align-items: center;
-}
-
-.modal-container.mostrar-modal{
-  display: none;
-}
-
-.modal{
-  background-color: white;
-  width: 60%;
-  min-width: 300px;
-  padding: 40px;
-  border: solid 10px #0072bc;
-  box-shadow: 0 0 0 10px white;
-  position: relative;
-}
-
-.fechar-modal{
-  position: absolute;
-  top: -30px;
-  right: -30px;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  border: 4px solid white;
-  background-color: #FFA500;
-  color: white;
-  cursor: pointer;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.3);
-}
-
-.form-modal input{
-  display: block;
-  margin-bottom: 10px;
-  font-size: 15px;
-  padding: 10px;
-  width: 100%;
-} 
 
 
 /**********************************/

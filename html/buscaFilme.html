@@ -1,156 +1,185 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!--Referenciando os arquivos .js-->
-    <!-- JS PARA BUSCAR NA API E DEVOLVER O FILME -->
-    
-    
-    
-    <!-- JS para o header -->
-    <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script defer src="../javascript/mobile-navbar.js"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
-    <script defer src="https://kit.fontawesome.com/611a588430.js" crossorigin="anonymous" ></script>
-    
-    <!--Referenciando os arquivos .css-->    
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/buscaFilme.css">
-    <link rel="stylesheet" href="../css/obrigatorios.css">
-    
-    <title>Pesquisa de Filme</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--Referenciando os arquivos .js-->
+  <!-- JS PARA BUSCAR NA API E DEVOLVER O FILME -->
+  <script defer src="../javascript/API de filme e verifica login/buscaFilmes.js"></script>
+
+  <!-- JS QUE VERIFICA SE O USUÁRIO ESTÁ LOGADO-->
+  <script defer src="../javascript/API de filme e verifica login/verificaLogin.js"></script>
+
+
+  <!-- JS para o header -->
+  <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script defer src="../javascript/mobile-navbar.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+    crossorigin="anonymous"></script>
+  <script defer src="https://kit.fontawesome.com/611a588430.js" crossorigin="anonymous"></script>
+
+  <!--Referenciando os arquivos .css-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/buscaFilme.css">
+  <link rel="stylesheet" href="../css/obrigatorios.css">
+
+  <title>Pesquisa de Filme</title>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <div class="box-logo">
-                <img src="../img/logo.jpg" alt="Logo da ResiliaFlix" class="img-logo">
-                <a class="logo" href="../index.html">RESILIA<span>FLIX</span></a>
-            </div>
+  <header>
+    <nav>
+      <div class="box-logo">
+        <img src="../img/logo.jpg" alt="Logo da ResiliaFlix" class="img-logo">
+        <a class="logo" href="../index.html">RESILIA<span>FLIX</span></a>
+      </div>
 
-            <div class="mobile-menu">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
-            
-            <ul class="nav-list">
-                <li><a href="../index.html">HOME</a></li>
-                <li><a data-toggle="modal" href="#modal">ENTRAR</a></li>
-                <li><a href="./cadastro.html">CADASTRAR</a></li>
-                <li><a href="./contato.html">QUEM SOMOS</a></li>
-                <li><a href="./buscaFilme.html"><i class="fas fa-search"></i></a></li>               
-          </ul>
-        </nav>
+      <div class="mobile-menu">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
 
-        <!--MODAL Login-->
-        <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Login</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  <form>
-                    <div class="form-group">
-                      <label for="recipient-name" class="col-form-label">Insira seu e-mail:</label>
-                      <input type="text" class="form-control" id="recipient-name" placeholder="Seu e-mail">
-                    </div>
-                    <div class="form-group">
-                      <label for="message-text" class="col-form-label">Insira sua senha:</label>
-                      <!--inserido para teste-->
-                      <input type="password" class="form-control" id="message-text">
-                      <!--textarea class="form-control" id="message-text"></textarea--><!--removido para teste-->
-                    </div>
+      <ul class="nav-list">
+        <li><a data-toggle="modal" id="logado" href="#"></a></li>
+        <li><a href="./contato.html">QUEM SOMOS</a></li>
+        <li><button id="btn-sair">Sair</button></li>
+      </ul>
+    </nav>
 
-                    <a href="#modalEsqueciASenha">Esqueci a senha</a>
-                </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                    <button type="button" class="btn btn-warning">Entrar</button>
-                    <!--data-dismiss="modal" fecha o modal-->
-                </div>
+    <!--MODAL Login-->
+    <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="recipient-name" class="col-form-label">Insira seu e-mail:</label>
+                <input type="text" class="form-control" id="recipient-name" placeholder="Seu e-mail">
               </div>
-            </div>
-        </div>
-
-            <!--MODAL - Esqueci a Senha-->
-        <div class="modal fade" id="modalEsqueciASenha" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Esqueci a senha</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  <form>
-                    <div class="form-group">
-                      <label for="recipient-name" class="col-form-label">Insira seu e-mail:</label>
-                      <input type="text" class="form-control" id="recipient-name" placeholder="Seu e-mail">
-                    </div>
-                </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                    <button type="button" class="btn btn-warning">Recupear senha</button>
-                    <!--data-dismiss="modal" fecha o modal-->
-                </div>
+              <div class="form-group">
+                <label for="message-text" class="col-form-label">Insira sua senha:</label>
+                <!--inserido para teste-->
+                <input type="password" class="form-control" id="message-text">
+                <!--textarea class="form-control" id="message-text"></textarea-->
+                <!--removido para teste-->
               </div>
-            </div>
+
+              <a href="#modalEsqueciASenha">Esqueci a senha</a>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+            <button type="button" class="btn btn-warning">Entrar</button>
+            <!--data-dismiss="modal" fecha o modal-->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--MODAL - Esqueci a Senha-->
+    <div class="modal fade" id="modalEsqueciASenha" tabindex="-1" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Esqueci a senha</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="recipient-name" class="col-form-label">Insira seu e-mail:</label>
+                <input type="text" class="form-control" id="recipient-name" placeholder="Seu e-mail">
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+            <button type="button" class="btn btn-warning">Recupear senha</button>
+            <!--data-dismiss="modal" fecha o modal-->
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </header>
+
+  <main>
+    <!--Formuário de pesquisa do filme-->
+    <h1>Busca de Filme</h1>
+    <section class="container">
+      <form class="formulario">
+        <div class="form-group col-md-12">
+          <input type="text" class="form-control" id="search" placeholder="Pesquise aqui:">
+        </div>
+      </form>
+
+      <div class="informacoes">
+        <!-- Envolver a imagem com uma ancora para clicar e levar a pagina de informação do filme -->
+        <img class="mediaImg" id="poster-filmes" src="../img/roloDeFilme.jfif" alt="">
+        <div class="mediaBody">
+          <h4 id="titulo-filme">Nome do Filme aparecerá aqui</h4>
+          <p>Breve sinopse do Filme aparecerá aqui.</p>
+          <button> + Informações</button>
         </div>
 
-    </header>
-    
-    <main>
-        <!--Formuário de pesquisa do filme-->
-        <h1>Busca de Filme</h1>
-        <section class = "container">
-            <form class="formulario">
-                <div class="form-group col-md-12" >
-                  <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Pesquise aqui:">
-                </div>
-                <button type="submit" class="btnCadastrar">Pesquisar</button>
-            </form> 
-             
-            <div class="informacoes">
-              <!-- Envolver a imagem com uma ancora para clicar e levar a pagina de informação do filme -->
-                <img class="mediaImg" src="../img/roloDeFilme.jfif" alt="">
-                <div class="mediaBody">
-                  <h4>Nome do Filme aparecerá aqui</h4>
-                  <p>Breve sinopse do Filme aparecerá aqui.</p>
-                  <a href="./infoDeFilme.html">+ Informações</a>
-                </div>
-                
-            </div>
+      </div>
 
-        </section>
+    </section>
 
-    </main>
+  </main>
 
-    <!-- footer -->
-    <footer class="footer">
-        <div class= "linksFooter">
-             <a href="../index.html">Home</a>
-             <span>-</span>
-             <a href="contato.html">Quem Somos</a>
-             <span>-</span>
-             <a href="cadastro.html">Cadastre-se aqui</a>
-        </div>
-        
-        <p>Copyright © 2021 RESILIAFLIX Brasil. Todos os direitos reservados, projeto criado para fins educativos. </p>
-    </footer>
+  <!-- footer -->
+  <footer class="footer">
+    <div class="linksFooter">
+      <a href="../index.html">Home</a>
+      <span>-</span>
+      <a href="contato.html">Quem Somos</a>
+      <span>-</span>
+      <a href="cadastro.html">Cadastre-se aqui</a>
+    </div>
+
+    <p>Copyright © 2021 RESILIAFLIX Brasil. Todos os direitos reservados, projeto criado para fins educativos. </p>
+  </footer>
+
+  <div class="modal-container">
+    <h2>Nome dos filmes</h2>
+    <div class="modal-flex">
+      <div class="modal-info-filmes">
+        <h3>Score:</h3>
+        <h3>Ano:</h3>
+        <h3>Duração:</h3>
+        <h3>Indicação Faixa Etária:</h3>
+        <h3>Genero do Filme</h3>
+        <h3>Diretor</h3>
+        <h3>Elenco</h3>
+        <h3>sinopse</h3>
+        <button class="fechar-modal">x</button>
+      </div>
+  
+      <div class="modal-poster">
+        <img class="mediaImg" src="../img/roloDeFilme.jfif" alt="">
+      </div>
+    </div> 
+    </div>
+      
 
 
 
 </body>
+
 </html>

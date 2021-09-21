@@ -7,6 +7,7 @@
     <title>RESILIAFLIX-ENTRETERIMENTO E DIVERSÃO</title>
     
     <script defer src="./javascript/Login e Modal/modal.js"></script>
+    <script defer src="./javascript/Login e Modal/login.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script defer src="javascript/anim.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
@@ -51,7 +52,7 @@
         <div class="gallery-wrap">
           <div class="gallery-center" id="GalleryCenter">
             <div class="gallery-box">
-              <a href="#">
+              <a style="background-color: rgb(66, 66, 107); height: 500px;" href="./html/buscaFilme.html">
                 <img src="img/1.png" alt="">
               </a>
               <a href="#">
@@ -244,10 +245,15 @@
         <button class="fechar-modal">x</button>
         <h3>Entrar</h3>
         <form class="form-modal">
-          <input type="email" class="input-modal"  placeholder="Email">
-          <input type="password" class="input-modal"  placeholder="Senha">
+          <label id="label-valida-email" for="valida-email">Email</label>
+          <input type="email" class="input-modal" id="valida-email" placeholder="Email">
+
+          <label id="label-valida-senha" for="valida-senha">Senha</label>
+          <input type="password" class="input-modal" id="valida-senha" placeholder="Senha">
+
           <a href="#modalEsqueciASenha">Esqueci a senha</a>
-          <input type="button" class="input-button" value="Entrar">
+          <input type="button" class="input-button" id="btn-logar" value="Entrar">
+          <div id="msg-error"></div>
         </form>
       </div>
     </div> 
