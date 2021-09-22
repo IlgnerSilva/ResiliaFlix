@@ -520,3 +520,25 @@ background-position: 0% 50%;
   transition: 1s;
 }
 
+.postersss{
+  position: relative;
+}
+.absolute{
+  display: none;
+  position: absolute;
+  font-size: 25px;
+}
+
+.testedeimagem{
+  max-width: 300px;
+  min-height: 480px;
+  margin-right: 500px;
+}
+
+.posterFilme:hover{
+
+}
+
+.carrosel .card{
+  line-height: 20px;
+}
