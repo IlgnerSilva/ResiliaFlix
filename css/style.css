@@ -520,13 +520,48 @@ background-position: 0% 50%;
   transition: 1s;
 }
 
-.postersss{
+.posters-filme{
   position: relative;
+  width: 250px;
+  background-color: #0d0d11;
 }
-.absolute{
-  display: none;
+
+.posters-filme h2{
   position: absolute;
-  font-size: 25px;
+  top: 10px;
+  left: 50px;
+  font-size: 20px;
+  display: none;
+}
+
+.pSinopse{
+  position: absolute;
+  top: 30px;
+  font-size: 15px;
+  padding: 20px;
+  display: none;
+ }
+
+.posters-filme:hover{
+  width: 260px;
+  transition: 1s;
+
+}
+
+.posters-filme:hover h2{
+  display: block;
+  transition: 1s;
+
+}
+.posters-filme:hover .pSinopse{
+  display: block;
+  transition: 1s;
+
+}
+
+.posters-filme:hover img{
+  transition: 1s;
+  opacity: 0.1;
 }
 
 .testedeimagem{
@@ -535,10 +570,8 @@ background-position: 0% 50%;
   margin-right: 500px;
 }
 
-.posterFilme:hover{
-
-}
 
 .carrosel .card{
   line-height: 20px;
+  background-color: #23232e;
 }
