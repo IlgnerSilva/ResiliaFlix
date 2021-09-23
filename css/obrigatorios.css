@@ -83,7 +83,11 @@ nav {
   color: white;
   font-size: 35px;
 } 
-    
+
+#logado{
+  color: #FFA500;
+}
+
 @keyframes navLinkFade {
     from {
         opacity: 0;

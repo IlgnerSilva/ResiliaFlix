@@ -14,9 +14,7 @@
 
     <!-- JS para o header -->
     <script defer src="../javascript/mobile-navbar.js"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
-        crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 
 
     <!--Referenciando os arquivos .css-->
@@ -24,8 +22,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/cadastro.css">
     <link rel="stylesheet" href="../css/obrigatorios.css">
     <link rel="shortcut icon" href="../img/logo.jpg">
@@ -48,75 +45,12 @@
             </div>
 
             <ul class="nav-list">
-                <li><a data-toggle="modal" href="#modalEsqueciASenha">ENTRAR</a></li>
+                <li><a id="login" href="../index.html">ENTRAR</a></li>
                 <li><a href="./contato.html">QUEM SOMOS</a></li>
                 <li><a href="./buscaFilme.html"><i class="fas fa-search"></i></a></li>
             </ul>
         </nav>
 
-        <!--MODAL Login-->
-        <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Login</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <form>
-                            <div class="form-group">
-                                <label for="recipient-name" class="col-form-label">Insira seu e-mail:</label>
-                                <input type="text" class="form-control" id="recipient-name" placeholder="Seu e-mail">
-                            </div>
-                            <div class="form-group">
-                                <label for="message-text" class="col-form-label">Insira sua senha:</label>
-                                <!--inserido para teste-->
-                                <input type="password" class="form-control" id="message-text">
-                                <!--textarea class="form-control" id="message-text"></textarea-->
-                                <!--removido para teste-->
-                            </div>
-
-                            <a href="#modalEsqueciASenha">Esqueci a senha</a>
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                        <button type="button" class="btn btn-warning">Entrar</button>
-                        <!--data-dismiss="modal" fecha o modal-->
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!--MODAL - Esqueci a Senha-->
-        <div class="modal fade" id="modalEsqueciASenha" tabindex="-1" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Esqueci a senha</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <form>
-                            <div class="form-group">
-                                <label for="recipient-name" class="col-form-label">Insira seu e-mail:</label>
-                                <input type="text" class="form-control" id="recipient-name" placeholder="Seu e-mail">
-                            </div>
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                        <button type="button" class="btn btn-warning">Recuperar senha</button>
-                        <!--data-dismiss="modal" fecha o modal-->
-                    </div>
-                </div>
-            </div>
-        </div>
     </header>
     <!--FIM CABEÇALHO-->
 

@@ -4,21 +4,9 @@
   padding: 0;
 }
 /**********************************/
-/* SCROLL DE IMAGENS
+/* Carrosel 360º
 /**********************************/
-bodyScroll{
-	font-size: 16px;
-	margin: 0;
-	/*background: #fff;
-	color: #000;*/
-}
-.imagem{
-	/*max-width: 80%;*/
-  max-width:10px;
-  max-height:10px;
-  width: 100;
-  height: 100;
-}
+
 .gallery-wrap{
 	width:100%;
 	height: 57vh;
@@ -54,6 +42,10 @@ bodyScroll{
 	margin-bottom: 10%;
 	box-shadow: 0 0 35px rgba(0, 0, 0, 0.6);
 }
+.gallery-box a img{
+  height: 180px;
+}
+
 .gallery-box:nth-child(2){
 	transform: translate(-50%, -50%) rotateY(-45deg) translateZ(300px);
 }
@@ -84,13 +76,13 @@ bodyScroll{
 
 
 /**********************************/
-/* . Carrosel 360º
+/* . Background - Carrosel 360º
 /**********************************/
 
 main {
   background: linear-gradient(149deg,#F7FD04 5%,#F9B208 25%,#FFA500 45%,#FC5404 75%);
   background-size: 400% 400%;
-  height: 75vh;
+  height: 85vh;
   animation: colors 5s ease infinite ;
 }
 @keyframes colors{
@@ -125,7 +117,7 @@ main {
 }
 
 /**********************************/
-/* . CARROSSELLL
+/* . CARROSSEL de poster
 /**********************************/
 .wrapper h1{
   font-size: 45px;
@@ -133,8 +125,7 @@ main {
   text-shadow: 2px 2px 2px #CE5937;
 }
 
-.carrosel{
-  
+.carrosel{  
   padding: 23px;
   background: linear-gradient(to bottom,#F7FD04 ,#F9B208 ,#FFA500 ,#743010 , black);
   animation: colors 5s ease infinite ;
@@ -261,12 +252,12 @@ main {
 }
 
 .somos-c_texto{
-	/* flex: 6 1 160px; */
+	
   padding: 0 70px;
 }
 
 .somos-c_img{
-	/* flex: 1 1 350px; */
+	
   margin: 10px auto;
   padding: 10px 40px;
 }
@@ -284,7 +275,7 @@ main {
 
 
 /**********************************/
-/* 3. Modal
+/* 3. Modal login
 /**********************************/
 
 .modal-container{
@@ -373,5 +364,10 @@ main {
   .somos-c{
     display: flex;
     flex-direction: column;
+  }
+}
+@media (max-width: 1000px){
+  .gallery-box a img {
+    height: 7em;
   }
 }

@@ -17,7 +17,7 @@ function buscaFilmeModal(dados){
 
 function buscaFilme(dados){
   if(dados.Poster == 'N/A' || dados.Poster == undefined){
-    document.querySelector('#poster-filmes').setAttribute('src', '../img/roloDeFilme.jfif')
+    document.querySelector('#poster-filmes').setAttribute('src', '../img/logo.jpg')
     tituloFilme.innerHTML = 'Filme não encontrado';
   }else{
     tituloFilme.innerHTML = dados.Title;
