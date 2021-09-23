@@ -79,6 +79,11 @@ h1{
     padding-top: 15px;
 }
 
+#btn-sair{
+    background-color: #23232e;
+    color: #ffa500;
+}
+
 
 /**********************************/
 /* 7. Estilizando os parágrafos
@@ -87,6 +92,13 @@ div p, h4{
     padding:  0 ;
     text-shadow: 1px 1px 1px cyan;
 }
+
+#mais-sobre-filmes{
+    border: 0;
+    color: #ffa500;
+    background-color: black;
+}
+
 /**********************************/
 /* 8. Estilizando o poster
 /**********************************/
@@ -160,7 +172,7 @@ p{
    .modal-flex{
     background-color: white;
     padding: 40px;
-    border: solid 10px #0072bc;
+    border: solid 10px #23232e;
     box-shadow: 0 0 0 10px white;
     position: relative;
     display: flex;
