@@ -1,4 +1,6 @@
-
+body{
+  font-family: 'Acme', sans-serif;
+}
 
 /**********************************/
 /* 1. Header
@@ -37,7 +39,6 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    font-family: sans-serif;
     background: #23232e;
     height: 8vh;
 }
@@ -171,7 +172,7 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    transform: translateX(100%);
+    transform: translateY(-150%);
     transition: transform 0.3s ease-in;
   }
   .nav-list li {
@@ -183,5 +184,8 @@ footer {
   }
   .col-md-12{
     position: static;
-}
+  }
+  .main-child h1, h2{
+    font-size: 2em;
+  }
 }
