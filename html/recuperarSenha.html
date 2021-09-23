@@ -1,63 +1,69 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/contato.css">
-    <script src="" defer></script>
-    <title>Esqueci minha senha</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../css/recuperarSenha.css">
+  <link rel="stylesheet" href="../css/obrigatorios.css">
+  <script defer src="../javascript/Recupera senha/recuperaSenha.js" defer></script>
+  <title>Esqueci minha senha</title>
 </head>
+
 <body>
-    <header>
-        <div class="menu-bg">
-			<div class="menu">
-				<div class="menu_logo">
-					<a href="../index.html"><img src="../img/RESILIAFLIX.gif" alt="logo1" class="gif">
-				</div><!-- .menu_logo -->
-				<nav class="nav">
-					<ul class="nav_list">
-              <ol><a href="#info" class="nav_link">Cadastre-se</a></ol>
-				    	<ol><a href="#login" class="nav_link">Entrar</a></ol>
-						<ol><a href="#pesquisa" class="nav_link">Pesquisar</a></ol>
-						<!-- <ol><a href="#info" class="nav_link">Contato</a></ol> -->
-					</ul> <!--nav_list-->
-				</nav> <!-- nav -->
-			</div> <!-- .menu -->
-		</div> <!-- .menu-bg -->
-    </header>
-    
-    <main>
-        <!--Contato: mostrando a equipeDev-->
-        <h1>Esqueci minha Senha</h1>
-        <section class = "container">
-            <form>
-                <div class="form-group">
-                  <label for="exampleInputPassword1">Insrira seu e-mail </label>
-                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Seu email">
-                </div>
-                <div class="form-group form-check">
-                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                  <label class="form-check-label" for="exampleCheck1">Não Sou Robô</label>
-                </div>
-                <button type="submit" class="btn btn-primary">Recuperar Senha</button>
-              </form>
-          
-        </section>
+  <header>
+    <!--CABEÇALHO-->
+    <nav>
+      <div class="box-logo">
+        <img src="../img/logo.jpg" alt="Logo da ResiliaFlix" class="img-logo">
+        <a class="logo" href="./index.html">RESILIA<span>FLIX</span></a>
+      </div>
 
-    </main>
+      <div class="mobile-menu">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+      <ul class="nav-list">
+        <!--li><a href="#">HOME</a></li-->
+        <li><a href="./html/cadastro.html">CADASTRAR</a></li>
+        <li><a href="./html/contato.html">QUEM SOMOS</a></li>
+        <li><a href="./html/buscaFilme.html"><i class="fas fa-search"></i></a></li>
+      </ul>
+    </nav>
+  </header>
+  <!--FIM CABEÇALHO-->
 
-    <footer class="footer">
-        <div class= "linksFooter">
-             <a href="../index.html">Home</a>
-             <span>-</span>
-             <a href="contato.html">Quem Somos</a>
-             <span>-</span>
-             <a href="cadastro.html">Cadastre-se aqui</a>
+  <main>
+    <h1>Esqueci minha Senha</h1>
+    <section class="container">
+      <form>
+        <div class="form-group">
+          <label id="label-recupera-senha" for="input-recupera-senha">Insrira seu e-mail </label>
+          <input type="email" class="form-control" id="input-recupera-senha" placeholder="Seu email">
         </div>
-        
-        <p>Copyright © 2021 RESILIAFLIX Brasil. Todos os direitos reservados, projeto criado para fins educativos. </p>
-    </footer>
+        <div id="msg-success"></div>
+        <div class="form-group form-check">
+          <!-- <input type="checkbox" class="form-check-input" id="exampleCheck1"> -->
+          <!-- <label class="form-check-label" for="exampleCheck1">Não Sou Robô</label> -->
+        </div>
+        <button type="button" id="btn-recuperar-senha" class="btn btn-primary">Recuperar Senha</button>
+      </form>
+    </section>
+  </main>
 
+  <footer class="footer">
+    <div class="linksFooter">
+      <a href="../index.html">Home</a>
+      <span>-</span>
+      <a href="contato.html">Quem Somos</a>
+      <span>-</span>
+      <a href="cadastro.html">Cadastre-se aqui</a>
+    </div>
+
+    <p>Copyright © 2021 RESILIAFLIX Brasil. Todos os direitos reservados, projeto criado para fins educativos. </p>
+  </footer>
 </body>
 </html>
