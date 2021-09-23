@@ -1,0 +1,373 @@
+/*index css*/
+* {
+  margin: 0;
+  padding: 0;
+}
+/**********************************/
+/* Carrosel 360º
+/**********************************/
+
+.gallery-wrap{
+	width:100%;
+	height: 57vh;
+	overflow:visible;
+	position: absolute;
+  opacity : 0.5;
+}
+.gallery-center{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transition: all 0.4s ease-out;
+	transform-style: preserve-3d;
+	transform: translate(-35%, -75%) perspective(600px) rotateY(0deg);
+}
+.gallery-box{
+	width: 50px;
+	position: absolute;
+	transform: translate(-50%, -50%) translateZ(-20px);
+	left: 0;
+	top: 0;
+	backface-visibility: visible;
+}
+.gallery-box a:first-child img{
+	margin-left: -75% ;
+	
+}
+.gallery-box a:last-child img{
+	margin-left: 25% ;
+}
+.gallery-box a{
+	margin-top: 10%;
+	margin-bottom: 10%;
+	box-shadow: 0 0 35px rgba(0, 0, 0, 0.6);
+}
+.gallery-box a img{
+  height: 180px;
+}
+
+.gallery-box:nth-child(2){
+	transform: translate(-50%, -50%) rotateY(-45deg) translateZ(300px);
+}
+.gallery-box:nth-child(3){
+	transform: translate(-50%, -50%) rotateY(-90deg) translateZ(200px);
+}
+.gallery-box:nth-child(4){
+	transform: translate(-50%, -50%) rotateY(-135deg) translateZ(300px);
+}
+.gallery-box:nth-child(5){
+	transform: translate(-50%, -50%) rotateY(-180deg) translateZ(200px);
+}
+.gallery-box:nth-child(6){
+	transform: translate(-50%, -50%) rotateY(-225deg) translateZ(300px);
+}
+.gallery-box:nth-child(7){
+	transform: translate(-50%, -50%) rotateY(-270deg) translateZ(200px);
+}
+.gallery-box:nth-child(8){
+	transform: translate(-50%, -50%) rotateY(-315deg) translateZ(300px);
+}
+.gallery-box:nth-child(9){
+	transform: translate(-50%, -50%) rotateY(-360deg) translateZ(300px);
+}
+.gallery-box:nth-child(10){
+	transform: translate(-50%, -50%) rotateY(-405deg) translateZ(300px);
+}
+
+
+/**********************************/
+/* . Background - Carrosel 360º
+/**********************************/
+
+main {
+  background: linear-gradient(149deg,#F7FD04 5%,#F9B208 25%,#FFA500 45%,#FC5404 75%);
+  background-size: 400% 400%;
+  height: 85vh;
+  animation: colors 5s ease infinite ;
+}
+@keyframes colors{
+  0%{
+  background-position: 0% 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position:0% 50% ;
+  }
+}
+.main-child {
+  z-index: 1;
+  display: grid;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 5px;
+  color: #000000;
+  padding-top: 20px;
+}
+
+.main h1 {
+  font-size: 64px;
+  max-width: 510px;
+}
+
+.main span {
+  font-size: 26px;
+  margin-top: 10px;
+}
+
+/**********************************/
+/* . CARROSSEL de poster
+/**********************************/
+.wrapper h1{
+  font-size: 45px;
+  text-align: center;
+  text-shadow: 2px 2px 2px #CE5937;
+}
+
+.carrosel{  
+  padding: 23px;
+  background: linear-gradient(to bottom,#F7FD04 ,#F9B208 ,#FFA500 ,#743010 , black);
+  animation: colors 5s ease infinite ;
+}
+.wrapper{
+  width: 100%;
+}
+.carousel{
+  max-width: 900px;
+  margin: auto;
+  padding: 35px 30px;
+  
+}
+.carousel .card{
+  color: #ffa500;
+  text-align: center;
+  margin: 10px 5px;
+  line-height: 250px;
+  font-size: 90px;
+  font-weight: 600;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+}
+.owl-carousel .owl-item img {
+  display: block;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.owl-dots{
+  text-align: center;
+  margin-top: 40px;
+}
+.owl-dot{
+  height: 15px;
+  width: 45px;
+  margin: 0 5px;
+  outline: none;
+  border-radius: 14px;
+  border: 2px solid #ffa500;
+  box-shadow: 0px 0px 9px #ffa500;
+  transition: all 0.1s ease;
+}
+.owl-dot.active,
+.owl-dot:hover{
+  background: #ffa500;
+}
+.posters-filme{
+  position: relative;
+  width: 250px;
+  background-color: #0d0d11;
+  border-radius: 10px;
+}
+.posters-filme img{
+  height: 400px;
+}
+.posters-filme h2{
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-size: 25px;
+  line-height: 30px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  display: none;
+  padding: 3px 10px ;
+}
+.pSinopse{
+  position: absolute;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  top: 100px;
+  font-size: 20px;
+  padding: 20px;
+  display: none;
+  text-align: justify;
+}
+.posters-filme:hover{
+  width: 260px;
+  transition: 1s;
+
+}
+.posters-filme:hover h2{
+  display: block;
+  transition: 1s;
+
+}
+.posters-filme:hover .pSinopse{
+  display: block;
+  transition: 1s;
+}
+.posters-filme:hover img{
+  transition: 1s;
+  opacity: 0.1;
+}
+.testedeimagem{
+  max-width: 300px;
+  min-height: 480px;
+  margin-right: 500px;
+}
+.carrosel .card{
+  line-height: 20px;
+  background-color: #23232e;
+}
+.somos{
+	padding: 10px 230px;
+	background-color: #000000;
+}
+.somos h2{
+  color: #ffa500;
+  font-size: 50px;
+  text-align: center;
+}
+.somos p{
+  font-size: 30px;
+  color: #ffa500;
+  line-height: 45px;
+  padding: 0 10px;
+}
+
+.somos-c{
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
+  padding: 10px 100px;
+}
+
+.somos-c_texto{
+	
+  padding: 0 70px;
+}
+
+.somos-c_img{
+	
+  margin: 10px auto;
+  padding: 10px 40px;
+}
+.img-tv img {
+  position: relative;
+  z-index: 1;
+}
+.download .grid > div:first-child {
+  order: 2;
+}
+
+.download .img-tv {
+  order: 1;
+}
+
+
+/**********************************/
+/* 3. Modal login
+/**********************************/
+
+.modal-container{
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2000;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-container.mostrar-modal{
+  display: none;
+}
+
+.modal{
+  background-color: white;
+  width: 60%;
+  min-width: 300px;
+  padding: 40px;
+  border: solid 10px #0072bc;
+  box-shadow: 0 0 0 10px white;
+  position: relative;
+}
+
+.fechar-modal{
+  position: absolute;
+  top: -30px;
+  right: -30px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 4px solid white;
+  background-color: #FFA500;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.3);
+}
+
+.form-modal input{
+  display: block;
+  margin-bottom: 10px;
+  font-size: 15px;
+  padding: 10px;
+  width: 100%;
+} 
+
+#msg-error{
+  text-align: center;
+  margin-bottom: 10px;
+  color: #ff0000;
+  background-color: #ffbbbb;
+  padding: 10px;
+  border-radius: 4px;
+  display: none;
+  transition: 1s;
+}
+
+
+
+@media (max-width: 767px) {
+  main{
+    height: 45vh;
+  }
+  .main-child{
+    font-size: 1.5em;
+    padding-top: 87px;
+  }  
+  .gallery-wrap  {
+    display: none;
+  } 
+  .carousel{
+    padding: 0;
+  }
+  .somos{
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 20px;
+  }
+  .somos-c{
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 1000px){
+  .gallery-box a img {
+    height: 7em;
+  }
+}

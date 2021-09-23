@@ -4,43 +4,145 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--Referenciando os arquivos .js-->    
+    <script defer src="https://kit.fontawesome.com/611a588430.js" crossorigin="anonymous" ></script>
+
+    <!-- JS para o header -->
+    <script defer src="../javascript/mobile-navbar.js"></script>
+    <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    
+    <!--Referenciando os arquivos .css-->
+    <!-- Link da Fonte Acme -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/contato.css">
-    <title>Contato</title>
+    <link rel="stylesheet" href="../css/obrigatorios.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    
+    <link rel="shortcut icon" href="../img/logo.jpg">
+    <title>Quem somos?</title>
 </head>
+
 <body>
-    <header></header>
-    <main> 
+    <header> <!--CABEÇALHO-->
+        <nav>
+            <div class="box-logo">
+                <img src="../img/logo.jpg" alt="Logo da ResiliaFlix" class="img-logo">
+                <a class="logo" href="../index.html">RESILIA<span>FLIX</span></a>
+       
+            </div>
+
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            
+            <ul class="nav-list">
+                <li><a href="../index.html">ENTRAR</a></li>
+                <li><a href="./cadastro.html">CADASTRAR</a></li>
+                <li><a href="./buscaFilme.html"><i class="fas fa-search"></i></a></li>
+            </ul>
+        </nav>
+    </header> <!--FIM CABEÇALHO-->
+    
+    <main>
         <!--Contato: mostrando a equipeDev-->
-        <h1>A equipe do ResiliaFlix é:</h1>
-       <section class = "container">
-           <div>
-               <img src="../img/avatarfem.jpg" alt="" class="grupoimg">
-               <p>Camila Albuquerque</p>
-               <p>Time HTML e CSS</p>
+        <h1>Equipe ResiliaFlix</h1>
+        
+        <section class = "container">
+           <div class="integrante">
+                <img src="../img/camilaLogo.jpeg" alt="" class="grupoImg">
+                <div>
+                    <h2>Camila Viana</h2>
+                    <p>Time HTML e CSS</p>
+                    <a href="https://github.com/Camilalb" target="about:blank">
+                        <img src="../img/logoGitHub.png" class="redesSociaisImg">
+                    </a>
+                    <a href="https://www.linkedin.com/in/camila-viana-de-albuquerque-73286127/" target="about:blank">
+                        <img src="../img/logoLinkedIn.jpg" alt="" class="redesSociaisImg">
+                    </a>
+                </div>
+
            </div>
-           <div>
-               <img src="../img/avatarfem.jpg" alt="" class="grupoimg">
-               <p>Ilgner Silva</p>
-               <p>Time JavaScript</p>
+           <div class="integrante">
+                <img src="../img/ilgnerLogo.jfif" alt="" class="grupoImg">
+                <div>
+                    <h2>Ilgner Silva</h2>
+                    <p>Time JavaScript</p>
+                    <a href="https://github.com/IlgnerSilva" target="about:blank">
+                        <img src="../img/logoGitHub.png" class="redesSociaisImg">
+                    </a>
+                    <a href="https://www.linkedin.com/in/ilgner-silva-dev/" target="about:blank">
+                        <img src="../img/logoLinkedIn.jpg" alt="" class="redesSociaisImg">
+                    </a>
+                </div>                
            </div>
-           <div>
-                <img src="../img/avatarfem.jpg" alt="" class="grupoimg">
-                <p>Nilton Jr</p>
-                <p>Time HTML e CSS</p>
+
+           <div class="integrante">
+                <img src="../img/vihLogo" alt="" class="grupoImg">
+                <div>
+                    <h2>Maria Vitoria</h2>
+                    <p>Time HTML e CSS</p>
+                    <a href="https://github.com/V1t0r1a-C001"  target="about:blank">
+                        <img src="../img/logoGitHub.png" class="redesSociaisImg">
+                    </a>
+                    <a href="https://www.linkedin.com/in/"  target="about:blank">
+                        <img src="../img/logoLinkedIn.jpg" alt="" class="redesSociaisImg">
+                    </a>  
+                </div>
             </div>
-            <div>
-                <img src="../img/avatarfem.jpg" alt="" class="grupoimg">
-                <p>Vinicius Ribeiro</p>
-                <p>Tima JavaScript</p>
+ 
+            <div class="integrante">
+                <img src="../img/niltonLogo.jpg" alt="" class="grupoImg">
+                
+                <div>
+                    <h2>Nilton Júnior</h2>
+                    <p>Time HTML e CSS</p>
+                    <a href="https://github.com/NiltonCortesJr"  target="about:blank">
+                        <img src="../img/logoGitHub.png" class="redesSociaisImg">
+                    </a>
+                    <a href="https://www.linkedin.com/in/niltoncjr/" target="about:blank">
+                        <img src="../img/logoLinkedIn.jpg" alt="" class="redesSociaisImg">
+                    </a>
+                </div>
             </div>
-            <div>
-                <img src="../img/avatarfem.jpg" alt="" class="grupoimg">
-                <p>Maria Vitoria</p>
-                <p>FRONT-END</p>
+
+            <div class="integrante">
+                <img src="../img/viniLogo.jpeg" alt="" class="grupoImg">
+                <div>
+                    <h2>Vinicius Ribeiro</h2>
+                    <p>Time JavaScript</p>
+                    <a href="https://github.com/viniciusr-cmd" target="about:blank">
+                        <img src="../img/logoGitHub.png" class="redesSociaisImg">
+                    </a>
+                    <a href="https://www.linkedin.com/in/viniciusribeiro99/" target="about:blank">
+                        <img src="../img/logoLinkedIn.jpg" alt="" class="redesSociaisImg">
+                    </a>    
+                </div>
+                               
             </div>
+          
         </section>
 
     </main>
-    <footer></footer>
+    
+    <!--Contato: mostrando o rodapé-->
+    <footer class="footer">
+        <div class= "linksFooter">
+             <a href="../index.html">Home</a>
+             <span>-</span>
+             <a href="contato.html">Quem Somos</a>
+             <span>-</span>
+             <a href="cadastro.html">Cadastre-se aqui</a>
+        </div>
+        
+        <p>Copyright © 2021 RESILIAFLIX Brasil. Todos os direitos reservados, projeto criado para fins educativos. </p>
+    </footer>
+
 </body>
 </html>

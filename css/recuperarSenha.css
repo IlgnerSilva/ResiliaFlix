@@ -1,0 +1,103 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+/**********************************/
+/* 1. Estilizando o Body 
+com uma figura de background
+/**********************************/
+html,body{
+  height: 100%;
+}
+body{
+  background-image: url(../img/bg.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: sans-serif;
+  color: white;
+}
+
+/**********************************/
+/* 2. Ajustando o main
+/**********************************/
+main{
+    width: 95%;
+    height: 70%;
+    margin: 30px auto;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/**********************************/
+/* 3. Estilizando o h1
+/**********************************/
+h1{
+    text-shadow: 1px 1px 1px cyan;
+    font-size: 55px;
+    padding-top: 5px;
+}
+/**********************************/
+/* 4. Ajusatando o container
+/**********************************/
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 30px 10px;
+    align-items: center;      
+}
+
+/**********************************/
+/* 5. estilizando form
+/**********************************/
+
+#label-recupera-senha {
+  font-size: 40px;
+  margin-bottom: 15px;
+  /* text-shadow: 1px 1px 1px rgb(0, 0, 0); */
+}
+.form-group input{
+  display: block;
+  margin-top: 5px;
+  padding: 5px;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+#msg-success{
+  text-align: center;
+  margin-bottom: 10px;
+  color: #00bb00;
+  background-color: #bbffbe;
+  padding: 10px;
+  border-radius: 4px;
+  display: none;
+  transition: 1s;
+}
+
+
+/**********************************/
+/* 6. Tornando responsivo
+/**********************************/
+@media (max-width: 767px){
+    main {
+          width: 100%;
+          font-size: 15px;
+    }
+      .nav_list ol{
+          display: none;
+      }
+      .linksFooter a{
+          display: flex;
+          justify-content: space-evenly;
+          margin: 0 10px;
+          width: 100%;
+      }
+      .linksFooter span{
+          display: none;
+      }
+}
