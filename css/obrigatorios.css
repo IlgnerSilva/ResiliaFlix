@@ -24,7 +24,7 @@ a:hover {
 }
     
 .logo {
-    font-size: 24px;
+    font-size: 40px;
     text-transform: uppercase;
     letter-spacing: 4px;
     color: #FFA500;
@@ -61,6 +61,7 @@ nav {
 .nav-list li {
     letter-spacing: 3px;
     margin-left: 32px;
+    font-size: 25px;
 }
 
 
@@ -80,7 +81,7 @@ nav {
 /* Botão de Pesquisar */
 .fas, .fa-search{
   color: white;
-  font-size: 25px;
+  font-size: 35px;
 } 
     
 @keyframes navLinkFade {
@@ -185,7 +186,5 @@ footer {
   .col-md-12{
     position: static;
   }
-  .main-child h1, h2{
-    font-size: 2em;
-  }
+  
 }
