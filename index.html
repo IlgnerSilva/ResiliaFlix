@@ -5,14 +5,18 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
   <title>RESILIAFLIX-ENTRETERIMENTO E DIVERSÃO</title>
 
+  <!--Referenciando os arquivos .js-->
   <script defer src="./javascript/Login e Modal/modal.js"></script>
   <script defer src="./javascript/Login e Modal/login.js"></script>
   <script defer src="./javascript/API de filme e verifica login/requisicaoAPIECarrosel.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
   <script defer src="javascript/anim.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  
+  <!--Referenciando os arquivos .css-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
     integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
@@ -46,7 +50,7 @@
         <li><a id="login" href="#">ENTRAR</a></li>
         <li><a href="./html/cadastro.html">CADASTRAR</a></li>
         <li><a href="./html/contato.html">QUEM SOMOS</a></li>
-        <li><a href="./buscaFilme.html"><i class="fas fa-search"></i></a></li>
+        <li><a href="./html/buscaFilme.html"><i class="fas fa-search"></i></a></li>
       </ul>
     </nav>
   </header>
@@ -154,6 +158,7 @@
 
   <section class="carrosel">
     <div class="wrapper">
+      <h1>Filmes do dia</h1>
       <div class="carousel owl-carousel">
         <div class="posters-filme card"></div>
         <div class="posters-filme card"></div>
@@ -195,44 +200,29 @@
     </script>
   </section>
   <section class="somos" id="somos">
-    <h2 class="section_title"> <br>Aproveite em qualquer lugar, e quando quiser </h2>
+    <h2 class="section_title"> <br>Aproveite em qualquer lugar e quando quiser </h2>
 
     <div class="somos-c">
-      <div class="somos-c_texto">
-        <p>Assista em Smart TVs, PlayStation, Xbox, Chromecast, Apple TV,
-          aparelhos de Blu-ray, celular, tablet, smart TV ou notebook.
-      </div> <!-- somos-c_texto -->
       <div class="somos-c_img">
         <img src="img/bg1.png" alt="Quem somos">
       </div>
-      <!--somos-c_img-->
+      <div class="somos-c_texto">
+        <p>Assista os seus filmes favoritos em SmartTVs, PlayStation, Xbox, Chromecast, Apple TV,
+          aparelhos de Blu-ray, celular, tablet, smart TV ou notebook, a qualquer hora e em qualquer lugar.
+      </div> <!-- somos-c_texto -->
+      
     </div> <!-- somos-c -->
   </section> <!-- .somos-->
 
-  <section class="somos" id="somos">
-    <h2 class="section_title"> <br>Utilize o modo aleatório de indicação </h2>
-    <div class="somos-c">
-      <div class="somos-c_texto">
-        <p>
-          Tá em dúvida do que assistir?<br> Ou, nem sabe o que quer ver?
-          Para usar o seu tempo assistindo, e não procurando desenvolvemos
-          essa forma prática, onde te recomendamos algo com o seu perfil do dia!
-        </p>
-      </div> <!-- somos-c_texto -->
-      <div class="somos-c_img">
-        <img src="img/dado1.gif" alt="Quem somos">
-      </div>
-      <!--somos-c_img-->
-    </div> <!-- somos-c -->
-  </section> <!-- .somos-->
+  
 
   <footer class="footer">
     <div class="linksFooter">
-      <a href="../index.html">Home</a>
+      <a href="./index.html">Home</a>
       <span>-</span>
-      <a href="contato.html">Quem Somos</a>
+      <a href="./html/contato.html">Quem Somos</a>
       <span>-</span>
-      <a href="cadastro.html">Cadastra-se aqui</a>
+      <a href="./html/cadastro.html">Cadastra-se aqui</a>
     </div>
 
     <p>Copyright © 2021 RESILIAFLIX Brasil. Todos os direitos reservados, projeto criado para fins educativos. </p>
