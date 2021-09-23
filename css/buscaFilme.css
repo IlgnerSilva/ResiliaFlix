@@ -72,7 +72,7 @@ h1{
 /* 6. Estilizando a div media
 /**********************************/
 .informacoes{
-    display: flex;
+    display: none;
     flex-direction: row;
     justify-content: space-evenly;
     width: 100%;
@@ -84,7 +84,7 @@ h1{
 /* 7. Estilizando os parágrafos
 /**********************************/
 div p, h4{
-    padding: 10px 0 ;
+    padding:  0 ;
     text-shadow: 1px 1px 1px cyan;
 }
 /**********************************/
@@ -181,15 +181,26 @@ p{
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.3);
   }
   
-  .form-modal input{
-    display: block;
-    margin-bottom: 10px;
-    font-size: 15px;
-    padding: 10px;
-    width: 100%;
-  }  
+
 
   .poster-descricao{
-      width: 300px;
-      height: 480px;
+      max-width: 250px;
+      max-height: 400px;
   }
+
+  .modal-info-filmes{
+      max-width: 300px;
+
+  }
+
+  .modal-poster{
+      max-width: 250px;
+      
+  }
+
+  .modal-info{
+      margin: 0;
+      padding: 0;
+  }
+
+  
