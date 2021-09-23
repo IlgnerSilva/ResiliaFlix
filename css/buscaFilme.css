@@ -143,30 +143,28 @@ p{
 /* 3. Modal
 /**********************************/
 
- /* .modal-container{
+ .modal-container{
     width: 100%;
     height: 100vh;
     position: fixed;
     top: 0px;
     left: 0px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.9);
     z-index: 2000;
     display: none;
     justify-content: center;
     align-items: center;
-  }
+}
   
-   .modal-container.mostrar-modal{
-      } 
   
-   .modala{
+   .modal-flex{
     background-color: white;
-    width: 60%;
-    min-width: 300px;
     padding: 40px;
     border: solid 10px #0072bc;
     box-shadow: 0 0 0 10px white;
     position: relative;
+    display: flex;
+    justify-content: space-between;
   }
   
   .fechar-modal{
@@ -189,4 +187,9 @@ p{
     font-size: 15px;
     padding: 10px;
     width: 100%;
-  }   */
+  }  
+
+  .poster-descricao{
+      width: 300px;
+      height: 480px;
+  }

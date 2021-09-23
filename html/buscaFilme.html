@@ -9,6 +9,7 @@
   <!--Referenciando os arquivos .js-->
   <!-- JS PARA BUSCAR NA API E DEVOLVER O FILME -->
   <script defer src="../javascript/API de filme e verifica login/buscaFilmes.js"></script>
+  <script defer src="../javascript/API de filme e verifica login/modalBuscaDeFilmes.js"></script>
 
   <!-- JS QUE VERIFICA SE O USUÁRIO ESTÁ LOGADO-->
   <script defer src="../javascript/API de filme e verifica login/verificaLogin.js"></script>
@@ -134,7 +135,7 @@
         <div class="mediaBody">
           <h4 id="titulo-filme">Nome do Filme aparecerá aqui</h4>
           <p>Breve sinopse do Filme aparecerá aqui.</p>
-          <button> + Informações</button>
+          <button id="mais-sobre-filmes"> + Informações</button>
         </div>
 
       </div>
@@ -157,22 +158,21 @@
   </footer>
 
   <div class="modal-container">
-    <h2>Nome dos filmes</h2>
     <div class="modal-flex">
       <div class="modal-info-filmes">
-        <h3>Score:</h3>
-        <h3>Ano:</h3>
-        <h3>Duração:</h3>
-        <h3>Indicação Faixa Etária:</h3>
-        <h3>Genero do Filme</h3>
-        <h3>Diretor</h3>
-        <h3>Elenco</h3>
-        <h3>sinopse</h3>
+        <p>Score:</p>
+        <p>Ano:</p>
+        <p>Duração:</p>
+        <p>Indicação Faixa Etária:</p>
+        <p>Genero do Filme</p>
+        <p>Diretor</p>
+        <p>Elenco</p>
+        <p id="sinopse-modal">sinopse</p>
         <button class="fechar-modal">x</button>
       </div>
   
       <div class="modal-poster">
-        <img class="mediaImg" src="../img/roloDeFilme.jfif" alt="">
+        <img class="poster-descricao" src="../img/roloDeFilme.jfif" alt="">
       </div>
     </div> 
     </div>
